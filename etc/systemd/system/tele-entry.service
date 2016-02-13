@@ -1,0 +1,10 @@
+[Unit]
+Description=Tele-entry
+
+[Service]
+TimeoutStartSec=1
+ExecStart=/opt/tele-entry -addr "0.0.0.0:6921"
+
+[Install]
+WantedBy=multi-user.target
+
